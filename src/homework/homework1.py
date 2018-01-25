@@ -21,7 +21,7 @@ def get_minutes(seconds):
     return
 
 def get_seconds(seconds):
-    3800  %3600 % 60
+    3800  % 3600 % 60
     '''
     Type the code to calculate total minutes less whole hour given n(number) of seconds
     For example, given 3800 seconds the total minutes is 20
