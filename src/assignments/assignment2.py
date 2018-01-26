@@ -14,9 +14,9 @@ def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
         return ('Very Good')
     elif  (som_ratio + oft_ratio + voft_ratio + alw_ratio)  >= .7:
         return ('Good')
-    elif (rar_ratio + som_ratio + oft_ratio + voft_ratio + alw_ratio)  total >= .6:
+    elif (rar_ratio + som_ratio + oft_ratio + voft_ratio + alw_ratio) >= .6:
         return ('Needs Improvement')
-    elif (rar_ratio + som_ratio + oft_ratio + voft_ratio + alw_ratio)  total <= .6:
+    elif (rar_ratio + som_ratio + oft_ratio + voft_ratio + alw_ratio) <= .6:
         return ('Unacceptable')    
     '''
     Write code to calculate faculty evaluation rating according to asssignment instructions
@@ -48,4 +48,3 @@ def get_ratings(nev,rar,som, oft,voft, alw):
     
 
     
-
