@@ -1,7 +1,12 @@
 def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
      
     total = nev + rar + som + oft + voft + alw
-    
+    alw_ratio = alw / total
+    voft_ratio = voft / total
+    oft_ratio = oft / total
+    som_ratio = som / total
+    rar_ratio = rar / total
+    nev_ratio = nev / total
     if (voft + alw)  / total >= .9:
         return ('Excellent')
     elif (oft + voft + alw) / total >= .8:
@@ -42,3 +47,4 @@ def get_ratings(nev,rar,som, oft,voft, alw):
     
 
     
+
