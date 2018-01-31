@@ -21,9 +21,9 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
       Example for 24 hour format 21:09:09
     ADD YOUR CODE AFTER THE THREE QUOTES BELOW (dont forget to include a return statement at the end
     '''
-    if time_type 12 hours < 1 or hours > 12 
+    if time_type = 12 hours < 1 or hours > 12 
         print('Invalid hours(1-12)')
-    if time_type 24 hours > 23 or hours < 0
+    if time_type = 24 hours > 23 or hours < 0
         print('Invalid hours(range 0-23)
     if minutes < 0 or minutes > 59
         print('Invalid minutes(range 0-59)
