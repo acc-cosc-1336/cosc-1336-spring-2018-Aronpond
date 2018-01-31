@@ -1,4 +1,4 @@
-ef get_time(hour, minutes, seconds, time_type, meridiem='AM'):
+def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
     '''
     Returns a time in 12 or 24 hour format
 
