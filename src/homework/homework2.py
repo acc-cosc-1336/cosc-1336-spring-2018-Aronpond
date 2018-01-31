@@ -31,8 +31,8 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
         return('invalid seconds(range 0-59)')
     if time_type != 12 and time_type != 24:
               return('Invalid time_type(12 or 24 only)')
-    if time_type == 12
-              meridiem = str('AM')
+#    if time_type == 12:
+             # meridiem = str('AM')
 
     if hour < 10
               hour = "0" + str(hour)
@@ -59,4 +59,3 @@ def time_from_utc(utc_offset, utc_zero_time):
     '''
 
     return (utc_zero_time + utc_offset) % 24
-
