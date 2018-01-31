@@ -34,11 +34,11 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
 #    if time_type == 12:
              # meridiem = str('AM')
 
-    if hour < 10
+    if hour < 10:
               hour = "0" + str(hour)
-    if minutes < 10
+    if minutes < 10:
               minutes = "0" + str(minutes)
-    if seconds < 10
+    if seconds < 10:
               seconds = "0" + str(seconds)
 
               
@@ -59,3 +59,4 @@ def time_from_utc(utc_offset, utc_zero_time):
     '''
 
     return (utc_zero_time + utc_offset) % 24
+
