@@ -1,4 +1,4 @@
-def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
+ef get_time(hour, minutes, seconds, time_type, meridiem='AM'):
     '''
     Returns a time in 12 or 24 hour format
 
@@ -24,13 +24,13 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
     if time_type == 12 and(hour < 1 or hour > 12): 
         return('Invalid hours(range 1-12)')
     if time_type == 24 and(hour > 23 or hours < 0):
-        return('Invalid hours(range 0-23)
+        return('Invalid hours(range 0-23)')
     if minutes < 0 or minutes > 59
-        print('Invalid minutes(range 0-59)
+        return('Invalid minutes(range 0-59)')
     if seconds < 0 or seconds > 59
-        print('invalid seconds(range 0-59)')
+        return('invalid seconds(range 0-59)')
     if time_type != 12 or != 24
-              print('Invalid time_type(12 or 24 only)')
+              return('Invalid time_type(12 or 24 only)')
     if time_type = 12
               meridiem = str('AM')
 
@@ -59,4 +59,3 @@ def time_from_utc(utc_offset, utc_zero_time):
     '''
 
     return (utc_zero_time + utc_offset) % 24
-
