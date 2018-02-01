@@ -31,21 +31,16 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
         return('Invalid seconds(range 0-59)')
     if time_type != 12 and time_type != 24:
         return('Invalid time_type(12 or 24 only)')
-#    if time_type == 12:
-             # meridiem = str('AM')
-    
-
     if hour < 10:
               hour = "0" + str(hour)
     if minutes < 10:
               minutes = "0" + str(minutes)
     if seconds < 10:
               seconds = "0" + str(seconds)
-
-              
-    
-    
-    time = ''
+    if time_type == 12
+        time = str(hour":") str(minutes":") str(seconds) str(meridiem)
+    if time_type == 24
+        time = str(hour":") str(minutes":") str(seconds)
     #write decision structure code here
 
     return  time
@@ -60,3 +55,4 @@ def time_from_utc(utc_offset, utc_zero_time):
     '''
 
     return (utc_zero_time + utc_offset) % 24
+
