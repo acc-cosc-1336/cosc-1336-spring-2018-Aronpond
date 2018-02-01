@@ -37,9 +37,9 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
               minutes = "0" + str(minutes)
     if seconds < 10:
               seconds = "0" + str(seconds)
-    if time_type == 12
+    if time_type == 12:
         time = str(hour":") str(minutes":") str(seconds) str(meridiem)
-    if time_type == 24
+    if time_type == 24:
         time = str(hour":") str(minutes":") str(seconds)
     #write decision structure code here
 
@@ -55,5 +55,3 @@ def time_from_utc(utc_offset, utc_zero_time):
     '''
 
     return (utc_zero_time + utc_offset) % 24
-
- 
