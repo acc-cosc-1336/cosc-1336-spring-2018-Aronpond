@@ -29,8 +29,8 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
         return('Invalid minutes(range 0-59)')
     if seconds < 0 or seconds > 59:
         return('Invalid seconds(range 0-59)')
-    if time_type != 12 or(time_type != 24):
-              return('Invalid time_type(12 or 24 only)')
+    if time_type != 12 or time_type != 24:
+        return('Invalid time_type(12 or 24 only)')
 #    if time_type == 12:
              # meridiem = str('AM')
     
