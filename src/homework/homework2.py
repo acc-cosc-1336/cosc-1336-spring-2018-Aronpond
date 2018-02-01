@@ -38,7 +38,7 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
     if seconds < 10:
               seconds = "0" + str(seconds)
     if time_type == 12:
-        time = str(hour)+':' + str(minutes) +':' + str(seconds) + str(' 'meridiem)
+        time = str(hour)+':' + str(minutes) +':' + str(seconds) + str(' ') + str(meridiem)
     if time_type == 24:
         time = str(hour)+':' + str(minutes) +':' + str(seconds)
     #write decision structure code here
