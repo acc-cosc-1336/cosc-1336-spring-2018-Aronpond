@@ -16,7 +16,23 @@ def decimal_to_binary(number):
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
 
+
+
+    num = 65
     binary = ''
+
+    for i in range(7, -1, -1):
+        value = 2 ** i
+
+    if value <= num:
+        binary += '1'
+        num = num - value
+    else:
+        binary += '0'
+
+    print(binary)
+    
+    
 
     return binary
 
@@ -37,6 +53,12 @@ def sum_square_of_number(number):
 
     '''
     sum_of_squares = 0
+    
+    for num in range(1, number):
+        square = num**2
+        sum_of_squares = square + sum_of_squares
+        
+    
 
 
     return sum_of_squares
@@ -57,7 +79,23 @@ def is_prime(n):
     TYPE YOUR CODE AFTER THE THREE QUOTES BELOW
     DON'T FORGET RETURN STATEMENT AT THE END OF THE FUNCTION
     '''
+    for num in range(1, number):
+        if number = 1
+            return False
+            else:
+                if number = 2
+            return True
+            current_number = 2
+            if number % current_number = 0
+            return False
+            else:
+                if number % current_number != 0
+                return True
+            current_number = current_number + 1
+                
+                
 
+              
 
 def list_of_primes(n):
     '''
@@ -77,4 +115,5 @@ def list_of_primes(n):
     primes = ''
 
     return primes
+
 
