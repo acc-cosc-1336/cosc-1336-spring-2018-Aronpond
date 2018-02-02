@@ -79,21 +79,18 @@ def is_prime(n):
     TYPE YOUR CODE AFTER THE THREE QUOTES BELOW
     DON'T FORGET RETURN STATEMENT AT THE END OF THE FUNCTION
     '''
-    for num in range(1, number):
-        if number = 1
+
+    if number == 1:
+        return False
+    elif if number == 2:
+        return True
+    
+    for current_number in range(1, number):
+     
+        if number % current_number == 0:
             return False
-            else:
-                if number = 2
-            return True
-            current_number = 2
-            if number % current_number = 0
-            return False
-            else:
-                if number % current_number != 0
-                return True
-            current_number = current_number + 1
-                
-                
+        return True
+       
 
               
 
@@ -113,6 +110,11 @@ def list_of_primes(n):
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
     primes = ''
+
+    for i in range(1, n):
+        if is_prime(i):
+            primes = primes + str(i)
+        
 
     return primes
 
