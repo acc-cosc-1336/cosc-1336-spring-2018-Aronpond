@@ -18,19 +18,17 @@ def decimal_to_binary(number):
 
 
 
-    num = 65
     binary = ''
 
     for i in range(7, -1, -1):
         value = 2 ** i
 
-    if value <= num:
-        binary += '1'
-        num = num - value
-    else:
-        binary += '0'
+        if value <= number:
+            binary += '1'
+            number = number - value
+        else:
+            binary += '0'
 
-    print(binary)
     
     
 
