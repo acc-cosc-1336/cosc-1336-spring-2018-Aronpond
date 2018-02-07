@@ -11,7 +11,7 @@ def sum_odd_numbers(num):
     if num > 0:
         for num in range [1, num + 1]:
             if num % 2 == 1:
-            total += num
+                total += num
         return total
 
 def list_of_even_numbers(num):
@@ -24,9 +24,10 @@ def list_of_even_numbers(num):
     '''
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
-
-
-    return even_numbers
+    even_numbers = 2
+    while even_numbers <= num:
+        even_numbers += 2
+        return even_numbers
 
 def main1():
     '''
