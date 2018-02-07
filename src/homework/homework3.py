@@ -8,11 +8,11 @@ def sum_odd_numbers(num):
     '''
     total = 0
     #write your code starting here; use total as the sum total
-    while num > 0:
-        for num in range [1, num]:
-        total = total + num
-    return total
-
+        while num > 0:
+        for num in range [1, num + 1]:
+        if num % 2 == 1:
+            total += num
+        return total
 def list_of_even_numbers(num):
     '''
     WITH  WHILE LOOP
