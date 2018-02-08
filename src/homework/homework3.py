@@ -65,8 +65,7 @@ def main1():
     i = int(input("Enter a number: "))
     result1 = sum_odd_numbers(i)
     print(result1)
-    result2 = list_of_even_numbers(i)
-    print(result2)
+    print(list_of_even_numbers(i))
     
 
 
