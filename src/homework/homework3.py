@@ -9,9 +9,9 @@ def sum_odd_numbers(num):
     total = 0
     #write your code starting here; use total as the sum total
     if num > 0:
-        for num in range [1, num + 1]:
-            if num % 2 == 1:
-                total += num
+        for numb in range(1, num+1):
+            if numb % 2 == 1:
+                total = numb + total
         return total
 
 def list_of_even_numbers(num):
@@ -25,9 +25,11 @@ def list_of_even_numbers(num):
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
     even_numbers = 2
-    while even_numbers <= num:
-        even_numbers += 2
-        return even_numbers
+    while even_numbers <= num - 2:
+        if even_numbers % 2 == 0:
+            even_numbers = even_numbers + 2
+            print(even_numbers)
+    return even_numbers
 
 def main1():
     '''
@@ -57,7 +59,3 @@ def main1():
     IN THE PYTHON SHELL TYPE main1() to run the code in this function
 
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
-    '''
-    #write your code here
-
-
