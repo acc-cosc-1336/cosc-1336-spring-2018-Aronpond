@@ -1,5 +1,6 @@
 language: python
 python:
   - "3.6"
-- python -m unittest tests.homework.test_homework3 -v
+script:
+  - python -m unittest tests.homework.test_homework3 -v
 
