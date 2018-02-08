@@ -25,10 +25,10 @@ def list_of_even_numbers(num):
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
     even_numbers = 2
-    while even_numbers <= num - 2:
+    while even_numbers < num:
         if even_numbers % 2 == 0:
-            even_numbers = even_numbers + 2
             print(str(even_numbers))
+            even_numbers = even_numbers + 2
     return even_numbers
 
 def main1():
