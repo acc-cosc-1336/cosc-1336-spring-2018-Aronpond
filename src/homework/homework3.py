@@ -59,3 +59,13 @@ def main1():
     IN THE PYTHON SHELL TYPE main1() to run the code in this function
 
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
+    '''
+    #write your code here
+    i = int(input("Enter a number: "))
+    result1 = sum_odd_numbers(i)
+    print(result1)
+    print(list_of_even_numbers(i))
+
+
+
+   
