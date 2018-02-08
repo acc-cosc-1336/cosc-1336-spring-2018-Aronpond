@@ -28,7 +28,7 @@ def list_of_even_numbers(num):
     while even_numbers <= num - 2:
         if even_numbers % 2 == 0:
             even_numbers = even_numbers + 2
-            print(even_numbers - 2)
+            print(even_numbers)
     return even_numbers
 
 def main1():
@@ -65,4 +65,3 @@ def main1():
     result1 = sum_odd_numbers(i)
     print(result1)
     print(list_of_even_numbers(i))
-
