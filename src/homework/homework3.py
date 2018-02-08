@@ -24,7 +24,7 @@ def list_of_even_numbers(num):
     '''
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
-    x = 2
+    x = 0
     while x <= num:
         for x in range(x,num):
             if x % 2 == 0:
