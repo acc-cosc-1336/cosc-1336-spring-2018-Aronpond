@@ -25,9 +25,10 @@ class Test_Assign4(unittest.TestCase):
 #create two test cases for the factorial function, one test case with a value of 5 and the other with value of 6
 #THE NAME OF THE FUNCTION MUST BEGIN WITH test OTHERWISE THE TestCase suite will not recognize it as a test case.
 
-
-
-
+    def test_case_5(self):
+        self.assertEqual(120, factorial(5))
+    def test_case_6(self):
+        self.assertEqual(720, factorial(6))
 
 #remove the pound sign at the beginning of the next statement to run tests locally.
 #unittest.Main(verbosity=2)
