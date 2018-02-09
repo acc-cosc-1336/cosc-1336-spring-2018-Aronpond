@@ -22,4 +22,12 @@ def factorial(number):#value return function
 
     WRITE CODE AFTER THREE QUOTES BELOW
     '''
+    
+    
+    product = 1
+    for i in range(1,number):
+        product = product * (i+1)
+    return product
+        
+
 
