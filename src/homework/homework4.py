@@ -9,7 +9,8 @@ def valid_letter_grade(letter_grade):
     :return: True boolean expression if letter grade in range False otherwise.
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
-
+    if letter_grade == 'a' or letter_grade == 'b' or letter_grade == 'c' or letter_grade == 'd' or letter_grade == 'f' or letter_grade == 'A' or letter_grade == 'B' or letter_grade == 'C' or letter_grade == 'D' or letter_grade == 'F':
+        return True
 def get_credit_points(letter_grade):
     '''
     Given a letter grade return the credit points associated with that grade.
@@ -18,6 +19,16 @@ def get_credit_points(letter_grade):
     :return: a whole number representing the credit points
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
+    if letter_grade == 'a' or letter_grade == 'A':
+        return credit_points == 4
+    if letter_grade == 'b' or letter_grade == 'B':
+        return credit_points == 3
+    if letter_grade == 'c' or letter_grade == 'C':
+        return credit_points == 2
+    if letter_grade == 'd' or letter_grade == 'D':
+        return credit_points == 1
+    if letter_grade == 'f' or letter_grade == 'F':
+        return credit_points == 0
 
 def get_grade_points(credit_hours, credit_points):
     '''
@@ -27,6 +38,8 @@ def get_grade_points(credit_hours, credit_points):
     :param credit_points: Credit points for a class
     :return: Total grade points for a class
     '''
+    grade_points = (credit_hours) * (credit_points)
+    return grade_points
 
 def get_grade_point_average(credit_points, grade_points):
     '''
@@ -36,3 +49,5 @@ def get_grade_point_average(credit_points, grade_points):
     :return: The grade point average for a student
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
+    gpa = (grade_points) / (credit_hours)
+    return float(gpa)
