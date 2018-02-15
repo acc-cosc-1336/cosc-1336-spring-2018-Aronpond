@@ -29,8 +29,26 @@ def valid_letter_grade(letter_grade):
     D = 1
     F = 0
     f= 0
-    
-    if (letter_grade)==('a'or'A'or'b' or'B' or'c' or'C' or'd' or'D' or'f' or'F'):
+   #, or 'A',or 'b', or 'B', or 'c', or 'C', or 'd', or 'D', or 'f', or 'F')
+    if (letter_grade)==('a'):
+        return True
+    if (letter_grade)==('A'):
+        return True
+    if (letter_grade)==('b'):
+        return True
+    if (letter_grade)==('B'):
+        return True
+    if (letter_grade)==('c'):
+        return True
+    if (letter_grade)==('C'):
+        return True
+    if (letter_grade)==('d'):
+        return True
+    if (letter_grade)==('D'):
+        return True
+    if (letter_grade)==('f'):
+        return True
+    if (letter_grade)==('F'):
         return True
     else:
         return False
