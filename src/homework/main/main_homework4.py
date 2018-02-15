@@ -1,4 +1,4 @@
-import homework4
+import homework4 from cosc-1336-spring-2018-Aronpond/src/homework
 '''
 Use the functions from homework4 to...
 Write code to prompt the user for number of students and grades.
