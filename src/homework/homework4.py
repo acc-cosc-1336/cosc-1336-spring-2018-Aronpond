@@ -1,3 +1,13 @@
+a = 4
+A = 4
+b = 3
+B = 3
+C = 2
+c = 2
+d = 1
+D = 1
+f = 0
+F = 0
 def sample_function(value):
     '''Return value given'''
     return value
