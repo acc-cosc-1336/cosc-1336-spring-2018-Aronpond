@@ -1,13 +1,3 @@
-a = 4
-A = 4
-b = 3
-B = 3
-C = 2
-c = 2
-d = 1
-D = 1
-f = 0
-F = 0
 def sample_function(value):
     '''Return value given'''
     return value
@@ -19,10 +9,26 @@ def valid_letter_grade(letter_grade):
     :return: True boolean expression if letter grade in range False otherwise.
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
-    if letter_grade == 'a' or letter_grade == 'b' or letter_grade == 'c' or letter_grade == 'd' or letter_grade == 'f' or letter_grade == 'A' or letter_grade == 'B' or letter_grade == 'C' or letter_grade == 'D' or letter_grade == 'F':
+    a = 4
+    A = 4
+    b = 3
+    B = 3
+    c = 2
+    C = 2
+    d = 1
+    D = 1
+    F = 0
+    f= 0
+    
+    if (letter_grade)==('a'or'A'or'b' or'B' or'c' or'C' or'd' or'D' or'f' or'F'):
         return True
     else:
         return False
+
+    #elif (letter_grade) != ['a','A','b','B','C','c','d','D','f','F']:
+     #   return False
+    #elif (letter_grade) != ['a','A','b','B','C','c','d','D','f','F']:
+    #    return False
 def get_credit_points(letter_grade):
     '''
     Given a letter grade return the credit points associated with that grade.
@@ -71,5 +77,5 @@ def get_grade_points(credit_hours, credit_points):
 
 def get_grade_point_average(credit_hours, grade_points):
     grade_point_average = int(grade_points) / int(credit_hours)
-    return format(grade_point_average, '.2f')
+    return format(grade_point_average, '.2f'))
 
