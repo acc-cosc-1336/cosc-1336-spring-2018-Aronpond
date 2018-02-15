@@ -1,3 +1,15 @@
+a = 4
+
+A = 4
+b = 3
+B = 3
+c = 2
+C = 2
+d = 1
+D = 1
+
+F = 0
+f= 0
 def sample_function(value):
     '''Return value given'''
     return value
@@ -38,17 +50,84 @@ def get_credit_points(letter_grade):
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
 #    return letter_grade
+    a = 4
+
+    A = 4
+    b = 3
+    B = 3
+    c = 2
+    C = 2
+    d = 1
+    D = 1
+
+    F = 0
+    f= 0
 
     
-    if (letter_grade) == str(a) or letter_grade == str(A):
+    if (letter_grade) == (a) or letter_grade == (A):
         return 4
-    if (letter_grade) == str(b) or letter_grade == str(B):
+    if (letter_grade) == (b) or letter_grade == (B):
         return 3
-    if (letter_grade) == str(c) or letter_grade == str(C):
+    if (letter_grade) == (c) or letter_gradea = 4
+
+A = 4
+b = 3
+B = 3
+c = 2
+C = 2
+d = 1
+D = 1
+
+F = 0
+f= 0
+def sample_function(value):
+    '''Return value given'''
+    return value
+
+def valid_letter_grade(letter_grade):
+    '''
+    Given a letter grade determine if it's in the range A, B, C, D, F, a, b, c, d, f
+    :param letter_grade: A letter grade
+    :return: True boolean expression if letter grade in range False otherwise.
+    WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
+    '''
+    a = 4
+    A = 4
+    b = 3
+    B = 3
+    c = 2
+    C = 2
+    d = 1
+    D = 1
+    F = 0
+    f= 0
+    
+    if (letter_grade)==('a'or'A'or'b' or'B' or'c' or'C' or'd' or'D' or'f' or'F'):
+        return True
+    else:
+        return False
+
+    #elif (letter_grade) != ['a','A','b','B','C','c','d','D','f','F']:
+     #   return False
+    #elif (letter_grade) != ['a','A','b','B','C','c','d','D','f','F']:
+    #    return False
+def get_credit_points(letter_grade):
+    '''
+    Given a letter grade return the credit points associated with that grade.
+    IN BLACKBOARD: SEE TABLE IN HOMEWORK 4 ASSIGNMENT.
+    :param letter_grade: One letter grade
+    :return: a whole number representing the credit points
+    WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
+    '''
+#    return letter_grade
+    a = 4
+
+    A = 4
+    b = 3 == (C):
         return 2
-    if (letter_grade) == str(d) or letter_grade == str(D):
+    if (letter_grade) == (d) or letter_grade == (D):
         return 1
-    if (letter_grade) == str(f) or letter_grade == str(F):
+    if (letter_grade) == (f) or letter_grade == (F):
         return 0
     
     
