@@ -2,8 +2,12 @@ import unittest
 
 #write the import statements to bring in homework 4 functions
 #valid_letter_grade, get_credit_points, get_grade_points, and get_grade_point_average
-from src.homework.homework4 import sample_function
 
+from src.homework.homework4 import sample_function
+from src.homework.homework4 import valid_letter_grade
+from src.homework.homework4 import get_credit_points
+from src.homework.homework4 import get_grade_points
+from src.homework.homework4 import get_grade_point_average
 class TestHomework2(unittest.TestCase):
 
     def test_example(self):
@@ -16,12 +20,38 @@ class TestHomework2(unittest.TestCase):
 
     #WRITE 5 TESTS FOR get_credit_points with the letter A, B, C, D, and F as arguments
 
+    def test_GCP(self):
+        self.assetEqual(4, get_credit_points(A));
+        self.assetEqual(3, get_credit_points(B));
+        self.assetEqual(2, get_credit_points(C));
+        self.assetEqual(1, get_credit_points(D));
+        self.assetEqual(0, get_credit_points(F));
+
     #WRITE 5 TESTS FOR get_credit_points with the letter a, b, c, d, and f as arguments
 
+    def test_gcp(self):
+        self.assetEqual(4, get_credit_points(a));
+        self.assetEqual(3, get_credit_points(b));
+        self.assetEqual(2, get_credit_points(c));
+        self.assetEqual(1, get_credit_points(d));
+        self.assetEqual(0, get_credit_points(f));
+        
     #WRITE A TEST FOR valid_letter_grade with letter B as argument
+
+    def test_vlg_w_B(self):
+        self.assetEqual(3, valid_letter_grade(B));
 
     #WRITE A TEST FOR valid_letter_grade with letter Z as argument
 
+    def test_vlg_w_Z(self):
+        self.assetEqual(False, valid_letter_grade(Z));
+
     #WRITE A TEST FOR get_grade_points with arguments 3 and 4
 
+    def test_ggp(self):
+        self.assetEqual(12, get_grade_points(3,4));
+
     #WRITE A TEST FOR get_grade_point_average with arguments 9.0 and 36.0
+
+    def test_gpa(self):
+        self.assetEqual('4.00', get_grade_point_average(9.0,36.0))
