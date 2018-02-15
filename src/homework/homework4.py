@@ -24,15 +24,15 @@ def get_credit_points(letter_grade):
 #    return letter_grade
 
     
-    if (letter_grade) == str('a') or letter_grade == str('A'):
+    if (letter_grade) == str(a) or letter_grade == str(A):
         return 4
-    if (letter_grade) == str('b') or letter_grade == str('B'):
+    if (letter_grade) == str(b) or letter_grade == str(B):
         return 3
-    if (letter_grade) == str('c') or letter_grade == str('C'):
+    if (letter_grade) == str(c) or letter_grade == str(C):
         return 2
-    if (letter_grade) == str('d') or letter_grade == str('D'):
+    if (letter_grade) == str(d) or letter_grade == str(D):
         return 1
-    if (letter_grade) == str('f') or letter_grade == str('F'):
+    if (letter_grade) == str(f) or letter_grade == str(F):
         return 0
     
     
@@ -62,13 +62,4 @@ def get_grade_points(credit_hours, credit_points):
 def get_grade_point_average(credit_hours, grade_points):
     grade_point_average = int(grade_points) / int(credit_hours)
     return format(grade_point_average, '.2f')
-#def get_grade_point_average(credit_points, grade_points):
-    '''
-    Returns grade point average as a decimal value (float)
-    :param credit_points: Total credit points for a student.
-    :param grade_points: Total grade points for a student.
-    :return: The grade point average for a student
-    WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
-    '''
-#    gpa = (grade_points) / (credit_hours)
-#    return float(gpa)
+
