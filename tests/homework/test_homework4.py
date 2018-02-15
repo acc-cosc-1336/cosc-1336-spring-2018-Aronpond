@@ -1,5 +1,14 @@
 import unittest
-
+a = 4
+A = 4
+b = 3
+B = 3
+C = 2
+c = 2
+d = 1
+D = 1
+f = 0
+F = 0
 #write the import statements to bring in homework 4 functions
 #valid_letter_grade, get_credit_points, get_grade_points, and get_grade_point_average
 
@@ -55,3 +64,4 @@ class TestHomework2(unittest.TestCase):
 
     def test_gpa(self):
         self.assertEqual('4.00', get_grade_point_average(9.0,36.0))
+
