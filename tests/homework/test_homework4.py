@@ -30,20 +30,20 @@ class TestHomework2(unittest.TestCase):
     #WRITE 5 TESTS FOR get_credit_points with the letter A, B, C, D, and F as arguments
 
     def test_GCP(self):
-        self.assertEqual(4, get_credit_points(A));
-        self.assertEqual(3, get_credit_points(B));
-        self.assertEqual(2, get_credit_points(C));
-        self.assertEqual(1, get_credit_points(D));
-        self.assertEqual(0, get_credit_points(F));
+        self.assertEqual(4, get_credit_points('A'));
+        self.assertEqual(3, get_credit_points('B'));
+        self.assertEqual(2, get_credit_points('C'));
+        self.assertEqual(1, get_credit_points('D'));
+        self.assertEqual(0, get_credit_points('F'));
 
     #WRITE 5 TESTS FOR get_credit_points with the letter a, b, c, d, and f as arguments
 
     def test_gcp(self):
-        self.assertEqual(4, get_credit_points(a));
-        self.assertEqual(3, get_credit_points(b));
-        self.assertEqual(2, get_credit_points(c));
-        self.assertEqual(1, get_credit_points(d));
-        self.assertEqual(0, get_credit_points(f));
+        self.assertEqual(4, get_credit_points('a'));
+        self.assertEqual(3, get_credit_points('b'));
+        self.assertEqual(2, get_credit_points('c'));
+        self.assertEqual(1, get_credit_points('d'));
+        self.assertEqual(0, get_credit_points('f'));
         
     #WRITE A TEST FOR valid_letter_grade with letter B as argument
 
