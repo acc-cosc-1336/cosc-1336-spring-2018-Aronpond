@@ -48,12 +48,12 @@ class TestHomework2(unittest.TestCase):
     #WRITE A TEST FOR valid_letter_grade with letter B as argument
 
     def test_vlg_w_B(self):
-        self.assertEqual(3, valid_letter_grade(B));
+        self.assertEqual(3, valid_letter_grade('B'));
 
     #WRITE A TEST FOR valid_letter_grade with letter Z as argument
 
     def test_vlg_w_Z(self):
-        self.assertEqual(False, valid_letter_grade(Z));
+        self.assertEqual(False, valid_letter_grade('Z'));
 
     #WRITE A TEST FOR get_grade_points with arguments 3 and 4
 
@@ -64,4 +64,3 @@ class TestHomework2(unittest.TestCase):
 
     def test_gpa(self):
         self.assertEqual('4.00', get_grade_point_average(9.0,36.0))
-
