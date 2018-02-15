@@ -77,5 +77,4 @@ def get_grade_points(credit_hours, credit_points):
 
 def get_grade_point_average(credit_hours, grade_points):
     grade_point_average = int(grade_points) / int(credit_hours)
-    return format(grade_point_average, '.2f'))
-
+    return format(grade_point_average, '.2f')
