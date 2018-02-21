@@ -78,16 +78,17 @@ def is_prime(n):
     DON'T FORGET RETURN STATEMENT AT THE END OF THE FUNCTION
     '''
 
-    if number == 1:
+    if n == 1:
         return False
-    elif if number == 2:
+    elif if n == 2:
         return True
     
-    for current_number in range(1, number):
+    for current_number in range(1, n):
      
-        if number % current_number == 0:
+        if n % current_number == 0:
             return False
-        return True
+           
+    return True
        
 
               
