@@ -111,7 +111,7 @@ def list_of_primes(n):
 
     for i in range(1, n):
         if is_prime(i):
-            primes = primes + str(i)
+            primes = primes + str(i) + ','
         
 
     return primes
