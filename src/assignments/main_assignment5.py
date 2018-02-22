@@ -1,5 +1,5 @@
 #write import statement for recursive_decimal_binary
-from assignment5 import recursive_decimal_binary
+from src.assignments.assignment5 import recursive_decimal_binary
 
 '''
 Write a for loop from 1 to 255 and call the recursive_decimal_binary function with loop index/target variable
