@@ -4,29 +4,12 @@
 #Create another function named read_sales_data with file_object as a parameter.
 #The function will read the file line by line and display to screen to produce the table described in homework 5.
 
-def write_sales_data(item,price):
-    outfile = open('file_object.txt','a')
-    outfile.write(item)
-    outfile.write(" ")
-    outfile.write(str(price))
-    outfile.write('\n')
-    outfile.close()
+def write_sales_data(file_object, item, price):
 
-def read_sales_data():
-    infile = open('file_object.txt', 'r')
-    line1 = infile.readline()
-    line2 = infile.readline()
-    line3 = infile.readline()
-    line4 = infile.readline()
-    line5 = infile.readline()
-    line6 = infile.readline()
+    file_object.write(item + '\t' + price + '\n')
 
-    print(line1)
-    print(line2)
-    print(line3)
-    print(line4)
-    print(line5)
-    print(line6)
-    
-    infile.close()
+def read_sales_data(file_object):
+
+    for line in file_object:
+        print(line.rstrip('\n'))
 
