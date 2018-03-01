@@ -1,3 +1,5 @@
+import src.homework.homework6
+
 '''
 DO NOT USE LISTS
 
