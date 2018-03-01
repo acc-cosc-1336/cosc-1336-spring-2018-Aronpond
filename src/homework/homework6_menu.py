@@ -1,6 +1,6 @@
 #write import statements for homework 6 functions
 
-import homework6
+import src.homework.homework6
 
 def menu_options():
     print()
@@ -51,10 +51,18 @@ def handle_option_1():
     keep_going = 'y'
     
     while keep_going == 'y':
-        string1 = input(print('Enter dna string 1 with 10 letters containg A,C,G,T only: '))
-        string2 = input(print('Enter dna string 2 with 10 letters containg A,C,G,T only: '))
-        print(homework6.get_point_mutations(string1,string2))
-        keep_going = input(print('Enter y to try again, anything else to end.'))
+        string1 = input('Enter dna string 1 with 10 letters containg A,C,G,T only: ')
+
+        while len(string1) != 10:
+            string1 = input('Enter dna string 1 with 10 letters containg A,C,G,T only: ')
+
+        string2 = input('Enter dna string 2 with 10 letters containg A,C,G,T only: ')
+
+        while len(string2) != 10:
+            string2 = input('Enter dna string 2 with 10 letters containg A,C,G,T only: ')
+
+        print(src.homework.homework6.get_point_mutations(string1,string2))
+        keep_going = input('Enter y to try again, anything else to end.')
 
                             
 def handle_option_2():
@@ -64,15 +72,11 @@ def handle_option_2():
     '''
 
     infile = open('dna_complement.dat', 'r')
-    line1 = infile.readline()
-    line2 = infile.readline()
-    line3 = infile.readline()
-    line4 = infile.readline()
+
+    for line in infile:
+        print(src.homework.homework6.get_dna_complement(line))
+
     infile.close()
-    print(homework6.get_dna_complement(line1))
-    print(homework6.get_dna_complement(line2))
-    print(homework6.get_dna_complement(line3))
-    print(homework6.get_dna_complement(line4))
 
 def handle_option_3():
     '''
@@ -81,18 +85,11 @@ def handle_option_3():
     '''
 
     infile = open('transcribe_dna_to_rna.dat', 'r')
-    line1 = infile.readline()
-    line2 = infile.readline()
-    line3 = infile.readline()
-    line4 = infile.readline()
-    line5 = infile.readline()
+
+    for line in infile:
+        print(src.homework.homework6.transcibe_dna_into_rna(line))
+
     infile.close()
-    print(homework6.transcibe_dna_into_rna(line1))
-    print(homework6.transcibe_dna_into_rna(line2))
-    print(homework6.transcibe_dna_into_rna(line3))
-    print(homework6.transcibe_dna_into_rna(line4))
-    print(homework6.transcibe_dna_into_rna(line4))
-    print(homework6.transcibe_dna_into_rna(line5))
 
 def handle_option_4():
     '''
@@ -102,17 +99,11 @@ def handle_option_4():
     '''
 
     infile = open('compute_gc_content.dat', 'r')
-    line1 = infile.readline()
-    line2 = infile.readline()
-    line3 = infile.readline()
-    line4 = infile.readline()
-    line5 = infile.readline()
+
+    for line in infile:
+        print(src.homework.homework6.get_gc_content(line))
+
     infile.close()
-    print(homework6.get_gc_content(line1))
-    print(homework6.get_gc_content(line2))
-    print(homework6.get_gc_content(line3))
-    print(homework6.get_gc_content(line4))
-    print(homework6.get_gc_content(line5))
 
 def handle_option_5():
     pass #optional 
