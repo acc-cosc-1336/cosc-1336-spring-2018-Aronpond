@@ -17,8 +17,4 @@ def sum_list_values(values):
     while index < len(values):
         total += values[index]
         index += 1
-
     return total
-test = ['joe',1 ,1,1]
-print(sum_list_values(test))
-
