@@ -12,9 +12,9 @@ Pass the string to the reverse string function and display the reversed string
 def main():
     keep = 'y'
     while keep == 'y':
-        print ('yes')
-        keep = input(print('press y to keep going'))
-        string = (input(print('type a string to be reversed')))
-        reverse_string(string)
         
+        string = (input('type a string to be reversed'))
+        print(reverse_string(string))
+        keep = input('press y to keep going')
+
 main()
