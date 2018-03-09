@@ -40,7 +40,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with value My String Data return value should be ataD gnirtS yM
         '''
-        self.assertEqual('ataD gnirtS yM',test_reverse_string('My String Data'))
+        self.assertEqual('ataD gnirtS yM', reverse_string('My String Data'))
 
 
     def test_get_list_min_max(self):
