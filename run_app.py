@@ -1,4 +1,2 @@
-import src.homework.main.main_homework6
-
-#running this file will run the code in main_homework2.py file without the need to modify
-#code in that file
+import src.homework.main.main_homework7
+from src.homework.homework7 import get_p_distance_matrix
