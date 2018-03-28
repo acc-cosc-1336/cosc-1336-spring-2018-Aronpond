@@ -10,7 +10,7 @@ If the widget exists it will update the quantity of the widgets.
     :return:
 '''
 
-def add_inventory(widget_name, quantity):
+def add_inventory(widgets,widget_name, quantity):
 
     if widget_name not in widgets:
         widgets[(widget_name)] = (quantity)
@@ -19,9 +19,6 @@ def add_inventory(widget_name, quantity):
         i += quantity
         widgets[(widget_name)] = i
     
-    
-    
-
 '''
 Write a function named remove_inventory_widget with a widget_name parameter.
 
@@ -32,7 +29,7 @@ Otherwise it returns 'Item not found'
     :param widget_name:
     :return:
 '''
-def remove_inventory_widget(widget_name):
+def remove_inventory_widget(widgets,widget_name):
     
     if widget_name in widgets:
         del widgets[widget_name]
@@ -40,5 +37,3 @@ def remove_inventory_widget(widget_name):
     
     elif widget_name not in widgets:
         return 'Item not found'
-
-        
