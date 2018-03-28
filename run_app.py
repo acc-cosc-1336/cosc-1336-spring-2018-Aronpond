@@ -1,2 +1,2 @@
-import src.homework.main.main_homework7
-from src.homework.homework7 import get_p_distance_matrix
+import src.homework.main.main_homework8
+from src.homework.homework8 import add_inventory
