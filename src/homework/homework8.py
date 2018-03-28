@@ -9,7 +9,7 @@ If the widget exists it will update the quantity of the widgets.
     :param quantity:    Running count of inventory on hand
     :return:
 '''
-widgets = {'vj':10}
+
 def add_inventory(widget_name, quantity):
 
     if widget_name not in widgets:
