@@ -10,6 +10,8 @@ class InvoiceItem:
         Write a statement to multiply quantity * cost and return the result
         :return:  extended cost
         '''
+        extended_cost = self.quantity * self.cost
+        return extended_cost
 
     def get_description(self):
         return self.description
