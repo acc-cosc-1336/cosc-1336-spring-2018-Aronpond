@@ -31,7 +31,7 @@ class Invoice:
         :return:
         '''
 
-        extended_cost = 0
+        total_cost = 0
         print('Description', 'Quantity', '     Cost', 'Extended Cost')
 
         for invoice_item in self.invoice_items:
@@ -40,5 +40,5 @@ class Invoice:
                   format(invoice_item.cost, '9,.2f'), \
                   format(invoice_item.get_extended_cost(), '13,.2f'))
 
-        print('Total: ', ' ' *29,format(extended_cost, '.2f'))
+        print('Total: ', ' ' *29,format(total_cost, '.2f'))
 
