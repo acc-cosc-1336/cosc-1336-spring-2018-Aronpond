@@ -18,5 +18,5 @@ class Die:
         Defina a roll method that virtually rolls a die and returns the value.
         Use the Python random object to generate a random value from 1 to 6
         '''
-        a = random.randint(0,6)
+        a = random.randint(1,6)
         return a
