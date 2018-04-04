@@ -12,7 +12,8 @@ class TestHomework9(unittest.TestCase):
         Write a test case to ensure that the Die class only rolls values from 1 to 6
 
         '''
-
+        
         die = Die()
         rolled = die.roll()
-        self.assertTrue(1 <= rolled <= 6)
+      
+        self.assertIn(rolled,[1,2,3,4,5,6])
