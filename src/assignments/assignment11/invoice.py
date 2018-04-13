@@ -32,7 +32,7 @@ class Invoice:
         #ASSIGNMENT 11: add a statement that sets attribute invoice_total the invoice total less customer discount,
         #(multiply invoice total * customer discount)
         self.invoice_total -= self.invoice_total * self.customer.discount
-
+        
         return self.invoice_total
 
     def print_invoice(self):
@@ -51,7 +51,8 @@ class Invoice:
                   format(invoice_item.product.cost, '9,.2f'), format(invoice_item.get_extended_cost(), '13,.2f'))
 
         #ASSIGNMENT 11: add a statement that displays Discount and the product of total cost times customer discount
-
+        print('The discount is', self.customer.discount())
+        print('The product of total cost times customer discount is', self.get_invoice_total())
         #ASSIGNMENT 11: modify the statement below to display total cost less total cost times customer discount
-        print('Total: ', ' ' *29,format(total_cost, '.2f'))
+        print('Total: ', ' ' *29,format(get_invoice_total, '.2f'))
         print()
