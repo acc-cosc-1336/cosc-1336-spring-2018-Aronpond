@@ -9,7 +9,6 @@ from src.assignments.assignment11.good_customer import GoodCustomer
 '''
 LOOK AT THE TEST CASES FOR HINTS
 Create an invoice object ASSIGNMENT10: Make sure to change invoice bill_to argument to an instance of a Customer class 
-
 In the loop:
 Create a user controlled loop to continue until y is not typed, in loop...
     Prompt user for description, quantity, and cost.
@@ -57,5 +56,3 @@ invoice1.print_invoice()
 #ASSIGNMENT 11: call print invoice method of invoice 3 object
 invoice2.print_invoice()
 invoice3.print_invoice()
-
-

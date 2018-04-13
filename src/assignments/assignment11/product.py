@@ -2,7 +2,6 @@
 Create a product class.
 Add a constructor with parameters product_id, name, and cost
 Create public attributes for product_id, name, and cost
-
 STUDENT MUST ALSO MODIFY INVOICE item CLASS TO USE THIS CLASS
 SEE INVOICE item file FOR INSTRUCTIONS
 '''

@@ -51,8 +51,8 @@ class Invoice:
                   format(invoice_item.product.cost, '9,.2f'), format(invoice_item.get_extended_cost(), '13,.2f'))
 
         #ASSIGNMENT 11: add a statement that displays Discount and the product of total cost times customer discount
-        print('The discount is', self.customer.discount())
+        print('The discount is', total_cost * self.customer.discount)
         print('The product of total cost times customer discount is', self.get_invoice_total())
         #ASSIGNMENT 11: modify the statement below to display total cost less total cost times customer discount
-        print('Total: ', ' ' *29,format(get_invoice_total, '.2f'))
+        print('Total: ', ' ' *29,format(total_cost - (total_cost * self.customer.discount), '.2f'))
         print()

@@ -9,9 +9,9 @@ In the constructor method create a new class attribute named discount and set va
 Create a get_discount_rate method that returns the attribute discount.
 '''
 
-class AverageCustomer(self, first_name, last_name, phone_number):
-    Customer.__init__(self, first, last, phone_number)
-    
-    self.discount = .03
-    def get_discount_rate(self):
+class AverageCustomer:
+    def __init__(self, first_name, last_name, phone_number):
+        Customer.__init__(self, first_name, last_name, phone_number)
+        self.discount = .03
+    def get_discount_rate():
         return self.discount

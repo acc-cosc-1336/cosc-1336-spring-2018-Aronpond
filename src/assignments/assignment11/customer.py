@@ -2,7 +2,6 @@
 Create a customer class
 Add a constructor with parameters first_name, last_name, and phone_number
 Create public attributes for first_name, last_name, and phone_number
-
 STUDENT MUST ALSO MODIFY INVOICE CLASS TO USE THIS CLASS
 SEE INVOICE file FOR INSTRUCTIONS
 '''
