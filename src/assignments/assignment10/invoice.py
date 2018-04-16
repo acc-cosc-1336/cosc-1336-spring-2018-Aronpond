@@ -4,7 +4,7 @@ from src.assignment.assignment10.customer import Customer
 
 class Invoice:
 
-    def __init__(self, customer(), date):
+    def __init__(self, customer, date):
         #ASSIGNMENT10: 
         #change bill_to parameter name to customer and modify code below to use customer class 
         self.customer = customer
