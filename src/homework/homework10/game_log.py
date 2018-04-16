@@ -21,5 +21,5 @@ class GameLog(self):
 
     def display_log(self):
         for i in score_entries:
-            print(i)
+            print(i.score_entry_id, i.die1_value, i.die2_value)
             
