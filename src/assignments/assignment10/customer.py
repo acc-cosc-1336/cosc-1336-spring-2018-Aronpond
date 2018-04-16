@@ -8,7 +8,7 @@ SEE INVOICE file FOR INSTRUCTIONS
 '''
 class Customer(self):
 
-    def customer(first, last, phone_number):
+    def __init__(first, last, phone_number):
         self.first = first
         self.last = last
         self.phone_number = phone_number
