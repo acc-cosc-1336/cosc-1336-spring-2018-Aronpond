@@ -12,7 +12,7 @@ class Win(Tk):
         Label(self, text="Result: ").pack()
 
         #ASSIGNMENT13: add the textvariable property and set its value to self.label_var
-        Label(self, ).pack()
+        Label(self, textvariable=self.label_var).pack()
 
         self.label_var = StringVar()
 
